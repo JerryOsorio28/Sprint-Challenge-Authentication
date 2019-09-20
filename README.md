@@ -16,17 +16,17 @@ The Minimum Viable Product must be completed in three hours.
 
 Follow these steps to set up and work on your project:
 
-- [ ] Create a forked copy of this project.
-- [ ] Add your _Team Lead_ as collaborator on Github.
-- [ ] Clone your forked version of the Repository.
-- [ ] Create a new Branch on the clone: git checkout -b `firstName-lastName`.
-- [ ] Implement the project on this Branch, committing changes regularly.
-- [ ] Push commits: git push origin `firstName-lastName`.
+- [x] Create a forked copy of this project.
+- [x] Add your _Team Lead_ as collaborator on Github.
+- [x] Clone your forked version of the Repository.
+- [x] Create a new Branch on the clone: git checkout -b `firstName-lastName`.
+- [x] Implement the project on this Branch, committing changes regularly.
+- [x] Push commits: git push origin `firstName-lastName`.
 
 Follow these steps for completing your project.
 
-- [ ] Submit a Pull-Request to merge `firstName-lastName` branch into `master` on your fork. **Please don't make Pull Requests against Lambda's repository**.
-- [ ] Please don't merge your own pull request.
+- [x] Submit a Pull-Request to merge `firstName-lastName` branch into `master` on your fork. **Please don't make Pull Requests against Lambda's repository**.
+- [x] Please don't merge your own pull request.
 - [ ] Add your _Team Lead_ as a Reviewer on the Pull-request
 - [ ] Your _Team Lead_ will count the challenge as done by merging the branch into _master_.
 
@@ -39,13 +39,16 @@ Commit your code regularly and use descriptive messages. This helps both you (in
 Demonstrate your understanding of this week's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
 - [ ] What is the purpose of using _sessions_?
-
+    `Sessions and cookies are another way to persist authentication accross requests`
 - [ ] What does bcrypt do to help us store passwords in a secure manner.
-
+    `Bcrypt helps us store our passwords securely by generating a hash to mask the user's password with it, using also built in salts as aditional inputs in the hash to improve security`
 - [ ] What does bcrypt do to slow down attackers?
-
+    `As stated above, bcrypt has built in -salts- that will technically allow bcrypt to make a hash for the user password and take that hash, and re-hash it as many times the back end chooses to`
 - [ ] What are the three parts of the JSON Web Token?
-
+    [Header]: Which consists of the type of token and the algorithm being used to sign it.  
+    [Payload]: Which basically holds the data of the body.
+    [Signature]: Is used to verify the 'message' wasn't changed along the way.
+    
 ## Minimum Viable Product
 
 Implement an User Authentication System. Hash user's passwords before saving them to the database. Use `JSON Web Tokens` or `Sessions and Cookies` to persist authentication across requests.
