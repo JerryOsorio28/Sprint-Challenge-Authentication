@@ -1,11 +1,7 @@
 const router = require('express').Router(); //import Express Router
 const Users = require('./auth-helpers.js'); //import helpers/model
 const bcrypt = require('bcryptjs'); //import bcrypt dependency
-const jwt = require('jsonwebtoken'); // import JSON web token dependency
 const { generateToken }  = require('./generateToken.js')//import function to generate user token
-
-//<-----Added GET request to validate generated token
-router.get('/')
 
 router.post('/register', (req, res) => {
   // implement registration
